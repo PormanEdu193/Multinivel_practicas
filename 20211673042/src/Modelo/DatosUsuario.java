@@ -65,6 +65,7 @@ public class DatosUsuario extends Usuario {
         totalM=0;
         totalAfi=0;
         totalOtra=0;
+        menor = info.get(0).getEdad();
         
         Object[] filas = new Object[5];
         for(int i=0;i<info.size();i++){
@@ -84,6 +85,14 @@ public class DatosUsuario extends Usuario {
             else{
                 totalAfi = totalAfi+1;
             }
+            
+            if(info.size()!= 1){
+                aux=info.get(i).getEdad();
+                if(aux<menor){
+                    menor=aux;
+                }
+            }
+            
 
             modelo.addRow(filas);
         }

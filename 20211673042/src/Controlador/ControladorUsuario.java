@@ -45,13 +45,7 @@ public class ControladorUsuario implements ActionListener {
             objetoVista.getTxtMujeres().setText(String.valueOf(objetoModelo.getTotalM()));
             objetoVista.getTxtOtras().setText(String.valueOf(objetoModelo.getTotalOtra()));
             objetoVista.getTxtAficiones().setText(String.valueOf(objetoModelo.getTotalAfi()));
-            if(aux==0){
-            aux = edad;
-            }
-            if(aux<menor){
-                menor=aux;
-            }
-            objetoVista.getTxtMenor().setText(String.valueOf(menor));
+            objetoVista.getTxtMenor().setText(String.valueOf(objetoModelo.getMenor()));
             
             
             
