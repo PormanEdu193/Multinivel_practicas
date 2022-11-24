@@ -1,13 +1,13 @@
 
 package principal;
 
-import Controlador.ControladorUsuario;
-
+import Controlador.ControladorCdt;
 
 public class Principal {
 
+   
     public static void main(String[] args) {
-        ControladorUsuario controlador = new ControladorUsuario();
+        ControladorCdt controlador = new ControladorCdt();
     }
     
 }
